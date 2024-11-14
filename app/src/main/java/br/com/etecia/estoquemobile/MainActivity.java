@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         txtSenha = findViewById(R.id.txtSenha);
         txtEmail = findViewById(R.id.txtEmail);
 
-        //criando as açoes para o botao
+        //criando as açoes para o botao funcionar
 
     }
 }
