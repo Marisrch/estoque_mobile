@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplahActivity">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/pgbSplash"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:indeterminateOnly="true"
+        app:indicatorColor="#8BC6FA"
+        app:trackColor="#75AFE2" />
+
+    <ImageView
+        android:id="@+id/imgSplash"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/estoqueLogin" />
+
+    <TextView
+        android:id="@+id/txtSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgSplash"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/"
+        android:shadowColor="@color/black"
+        android:text="Estoque"
+        android:textColor="#F99E4C"
+        android:textSize="70sp" />
+
+
+</RelativeLayout>
