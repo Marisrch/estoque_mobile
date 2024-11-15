@@ -13,6 +13,18 @@
         android:theme="@style/Theme.EstoqueMobile"
         tools:targetApi="31">
         <activity
+            android:name=".VendasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MovimentacaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LocalizarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CadastrarActivity"
+            android:exported="false" />
+        <activity
             android:name=".menu"
             android:exported="false" />
         <activity
