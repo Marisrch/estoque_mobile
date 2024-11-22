@@ -17,7 +17,7 @@ import com.google.android.material.appbar.MaterialToolbar;
 public class menu extends AppCompatActivity {
 
     //declarar variaveis
-    CardView idCadastrar;
+    CardView idCadastrar, idlocalizar, idMovimentacao, idVendas;
 
     MaterialToolbar IdToolBarEstoque;
 
@@ -33,8 +33,36 @@ public class menu extends AppCompatActivity {
         });
         IdToolBarEstoque = findViewById(R.id.IdToolBarEstoque);
         idCadastrar = findViewById(R.id.idCadastrar);
+        idVendas = findViewById(R.id.idVendas);
+        idlocalizar = findViewById(R.id.idlocalizar);
+        idMovimentacao = findViewById(R.id.idMovimentacao);
+
 
         //clicar no botão
+
+       idMovimentacao.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               startActivity(new Intent(getApplicationContext(), MovimentacaoActivity.class));
+               finish();
+           }
+       });
+
+        idlocalizar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), LocalizarActivity.class));
+                finish();
+            }
+        });
+
+        idVendas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), VendasActivity.class));
+                finish();
+            }
+        });
 
         idCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
