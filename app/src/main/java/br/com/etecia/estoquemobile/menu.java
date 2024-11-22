@@ -3,9 +3,11 @@ package br.com.etecia.estoquemobile;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -14,7 +16,11 @@ import com.google.android.material.appbar.MaterialToolbar;
 
 public class menu extends AppCompatActivity {
 
+    //declarar variaveis
+    CardView idCadastrar;
+
     MaterialToolbar IdToolBarEstoque;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,15 +32,18 @@ public class menu extends AppCompatActivity {
             return insets;
         });
         IdToolBarEstoque = findViewById(R.id.IdToolBarEstoque);
+        idCadastrar = findViewById(R.id.idCadastrar);
 
         //clicar no botão
 
-        IdToolBarEstoque.setOnClickListener(new View.OnClickListener() {
+        idCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplication(),MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), CadastrarActivity.class));
                 finish();
+
             }
-        });
+        });;
+
     }
 }
