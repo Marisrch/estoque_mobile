@@ -13,9 +13,6 @@
         android:theme="@style/Theme.EstoqueMobile"
         tools:targetApi="31">
         <activity
-            android:name=".SplahActivity"
-            android:exported="false" />
-        <activity
             android:name=".VendasActivity"
             android:exported="false" />
         <activity

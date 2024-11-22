@@ -28,13 +28,15 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:orientation="horizontal"
-        android:padding="10dp">
+        android:padding="10dp"
+        >
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/txtNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome do item">
+            android:hint="Nome do item"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
